@@ -19,4 +19,5 @@ for (let i = 1; i <= 16; i++) {
   }
 }
 // let height = document.querySelector('.div1');
-height1.style.border = '4px solid red';
+height3.style.border = '4px solid red';
+// div1.style.border = '4px solid red';
