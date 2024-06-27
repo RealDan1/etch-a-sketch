@@ -1,12 +1,14 @@
 let bigbox = document.querySelector('.bigbox');
 
+// let heighty = [];
+
 for (let i = 1; i <= 16; i++) {
   let height = document.createElement('div');
+  // heighty.push(height);
 
   height.id = 'height' + i;
   bigbox.appendChild(height);
 
-  // container.style.display = flex;
   for (let j = 1; j <= 16; j++) {
     let div = document.createElement('div');
     div.id = 'div' + j;
@@ -16,5 +18,5 @@ for (let i = 1; i <= 16; i++) {
     height.appendChild(div);
   }
 }
-// let height1 = document.querySelector('.div1');
-// height1.style.border = '1px solid red';
+// let height = document.querySelector('.div1');
+height1.style.border = '4px solid red';
