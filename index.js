@@ -22,3 +22,5 @@ for (let i = 1; i <= 16; i++) {
 //width
 // let br = document.createElement('br');
 // container.appendChild(br);
+let height1 = document.querySelector('.height1');
+height1.style.border = '1px solid red';
