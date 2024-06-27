@@ -1,9 +1,11 @@
 let bigbox = document.querySelector('.bigbox');
 
 for (let i = 1; i <= 16; i++) {
-  let heightbox = document.createElement('div');
+  let height = document.createElement('div');
 
-  heightbox.id = 'cont' + i;
+  height.id = 'height' + i;
+  bigbox.appendChild(height);
+
   // container.style.display = flex;
   for (let i = 1; i <= 16; i++) {
     let div = document.createElement('div');
@@ -11,10 +13,10 @@ for (let i = 1; i <= 16; i++) {
     div.style.border = '1px solid black';
     div.style.height = '30px';
     div.style.width = '30px';
-    container.appendChild(div);
+    height.appendChild(div);
   }
-  let br = document.createElement('br');
-  container.appendChild(br);
+  // let br = document.createElement('br');
+  // container.appendChild(br);
 }
 
 //width
