@@ -22,3 +22,4 @@ for (let i = 1; i <= 16; i++) {
 // let width = document.querySelector('.div1');
 width1.style.border = '4px solid red';
 height[100].style.border = '5px solid red';
+height[101].style.border = '5px solid red';
