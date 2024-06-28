@@ -2,6 +2,7 @@ let bigbox = document.querySelector('.bigbox');
 
 // let heighty = [];
 
+//width
 for (let i = 1; i <= 16; i++) {
   let height = document.createElement('div');
   // heighty.push(height);
@@ -9,6 +10,7 @@ for (let i = 1; i <= 16; i++) {
   height.id = 'height' + i;
   bigbox.appendChild(height);
 
+  //height
   for (let j = 1; j <= 16; j++) {
     let div = document.createElement('div');
     div.id = 'div' + j + '-' + i;
