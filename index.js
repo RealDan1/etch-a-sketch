@@ -25,3 +25,14 @@ for (let i = 1; i <= 16; i++) {
 // boxes[101].style.border = '5px solid red';
 
 //change color on hover
+boxes.forEach((element) => {
+  element.addEventListener('mouseover', () => {
+    element.style.backgroundColor = 'black';
+  });
+});
+
+// boxes.forEach((element) => {
+//   element.addEventListener('mouseout', () => {
+//     element.style.backgroundColor = 'red';
+//   });
+// });
