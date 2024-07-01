@@ -36,3 +36,5 @@ boxes.forEach((element) => {
 //     element.style.backgroundColor = 'red';
 //   });
 // });
+
+let reset_button = document.querySelector('.button');
