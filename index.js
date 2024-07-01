@@ -37,4 +37,9 @@ boxes.forEach((element) => {
 //   });
 // });
 
-let reset_button = document.querySelector('.button');
+let reset_button = document.querySelector('.reset_button');
+reset_button.addEventListener('click', () => {
+  boxes.forEach((element) => {
+    element.style.backgroundColor = 'white';
+  });
+});
