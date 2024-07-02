@@ -14,7 +14,7 @@ for (let i = 1; i <= 20; i++) {
   width.id = 'width' + i;
 
   //height
-  for (let j = 1; j <= 20; j++) {
+  for (let j = 1; j <= 30; j++) {
     let div = document.createElement('div');
     width.appendChild(div);
     div.id = 'div' + j;
