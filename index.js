@@ -3,15 +3,11 @@ let boxes = [];
 //width
 for (let i = 1; i <= 20; i++) {
   let width = document.createElement('div');
+  width.id = 'width' + i;
   bigbox.appendChild(width);
   width.style.display = 'flex';
   width.style.flex = '1';
   width.style.flexDirection = 'column';
-  // width.style.height = '10px';
-  // width.style.width = 'auto';
-  // widthy.push(width);
-
-  width.id = 'width' + i;
 
   //height
   for (let j = 1; j <= 30; j++) {
@@ -19,19 +15,13 @@ for (let i = 1; i <= 20; i++) {
     width.appendChild(div);
     div.id = 'div' + j;
     boxes.push(div);
+
     div.style.display = 'flex';
-    width.style.flexDirection = 'column';
     div.style.flex = '1';
     div.style.border = '1px solid black';
-
-    // div.style.height = 'auto';
     div.style.width = 'auto';
   }
 }
-
-// width1.style.border = '4px solid red';
-// boxes[100].style.border = '5px solid red';
-// boxes[101].style.border = '5px solid red';
 
 //change color on hover
 boxes.forEach((element) => {
@@ -40,12 +30,7 @@ boxes.forEach((element) => {
   });
 });
 
-// boxes.forEach((element) => {
-//   element.addEventListener('mouseout', () => {
-//     element.style.backgroundColor = 'red';
-//   });
-// });
-
+//reset button
 let reset_button = document.querySelector('.reset_button');
 reset_button.addEventListener('click', () => {
   boxes.forEach((element) => {
