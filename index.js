@@ -1,12 +1,14 @@
 let bigbox = document.querySelector('.bigbox');
 let boxes = [];
 //width
-for (let i = 1; i <= 16; i++) {
+for (let i = 1; i <= 17; i++) {
   let width = document.createElement('div');
   bigbox.appendChild(width);
   width.style.display = 'flex';
   width.style.flex = '1';
   width.style.flexDirection = 'column';
+  // width.style.height = 'auto';
+  // width.style.width = 'auto';
   // widthy.push(width);
 
   width.id = 'width' + i;
@@ -21,8 +23,8 @@ for (let i = 1; i <= 16; i++) {
     div.style.flex = '1';
     div.style.border = '1px solid black';
 
-    // div.style.height = '20px';
-    // div.style.width = '20px';
+    // div.style.height = 'auto';
+    div.style.width = '20px';
   }
 }
 
