@@ -1,5 +1,6 @@
 let bigbox = document.querySelector('.bigbox');
 let boxes = [];
+
 //width
 for (let i = 1; i <= 20; i++) {
   let width = document.createElement('div');

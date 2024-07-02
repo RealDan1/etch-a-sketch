@@ -1,14 +1,9 @@
-* {
-  /* border: 1px solid red; */
-  /* margin: 2px; */
-}
 .bigbox {
   margin: 30px;
   justify-content: center;
   display: flex;
   width: 500px;
   height: 500px;
-  /* border: 1px solid rgb(21, 255, 0); */
 }
 body {
   display: flex;
