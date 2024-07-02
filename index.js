@@ -5,6 +5,7 @@ for (let i = 1; i <= 20; i++) {
   let width = document.createElement('div');
   width.id = 'width' + i;
   bigbox.appendChild(width);
+
   width.style.display = 'flex';
   width.style.flex = '1';
   width.style.flexDirection = 'column';
