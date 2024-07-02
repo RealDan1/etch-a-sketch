@@ -1,8 +1,9 @@
 let bigbox = document.querySelector('.bigbox');
 let boxes = [];
+let boxSize = 100;
 
 //width
-for (let i = 1; i <= 20; i++) {
+for (let i = 1; i <= boxSize; i++) {
   let width = document.createElement('div');
   width.id = 'width' + i;
   bigbox.appendChild(width);
@@ -12,7 +13,7 @@ for (let i = 1; i <= 20; i++) {
   width.style.flexDirection = 'column';
 
   //height
-  for (let j = 1; j <= 30; j++) {
+  for (let j = 1; j <= boxSize; j++) {
     let div = document.createElement('div');
     width.appendChild(div);
     div.id = 'div' + j;
