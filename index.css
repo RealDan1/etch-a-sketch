@@ -3,6 +3,7 @@
   margin: 2px;
 }
 .bigbox {
+  margin: 30px;
   justify-content: center;
   display: flex;
   width: 500px;

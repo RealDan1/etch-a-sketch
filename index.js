@@ -7,14 +7,14 @@ for (let i = 1; i <= 20; i++) {
   width.style.display = 'flex';
   width.style.flex = '1';
   width.style.flexDirection = 'column';
-  // width.style.height = 'auto';
+  // width.style.height = '10px';
   // width.style.width = 'auto';
   // widthy.push(width);
 
   width.id = 'width' + i;
 
   //height
-  for (let j = 1; j <= 50; j++) {
+  for (let j = 1; j <= 20; j++) {
     let div = document.createElement('div');
     width.appendChild(div);
     div.id = 'div' + j;
