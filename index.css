@@ -1,6 +1,8 @@
 .bigbox {
   justify-content: center;
   display: flex;
+  max-width: 960px;
+  max-height: 960px;
 }
 body {
   display: flex;

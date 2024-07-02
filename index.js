@@ -3,20 +3,26 @@ let boxes = [];
 //width
 for (let i = 1; i <= 16; i++) {
   let width = document.createElement('div');
+  bigbox.appendChild(width);
+  width.style.display = 'flex';
+  width.style.flex = '1';
+  width.style.flexDirection = 'column';
   // widthy.push(width);
 
   width.id = 'width' + i;
-  bigbox.appendChild(width);
 
   //height
   for (let j = 1; j <= 16; j++) {
     let div = document.createElement('div');
+    width.appendChild(div);
     div.id = 'div' + j;
     boxes.push(div);
+    div.style.display = 'flex';
+    div.style.flex = '1';
     div.style.border = '1px solid black';
-    div.style.height = '30px';
-    div.style.width = '30px';
-    width.appendChild(div);
+
+    // div.style.height = '20px';
+    // div.style.width = '20px';
   }
 }
 
