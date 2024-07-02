@@ -5,8 +5,9 @@
 .bigbox {
   justify-content: center;
   display: flex;
-  max-width: 960px;
-  max-height: 960px;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgb(21, 255, 0);
 }
 body {
   display: flex;
