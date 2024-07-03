@@ -1,17 +1,9 @@
 let bigbox = document.querySelector('.bigbox');
 let boxes = [];
+let boxSize = 30;
+loadGrid();
 
-//button to input x/y size
-let sizeButton = document.querySelector('.size_button');
-sizeButton.addEventListener('click', () => {
-  let boxSize = prompt('how many boxes do you want for the grid size?');
-  if (width) {
-    for (let i = 1; i <= boxSize; i++) {
-      bigbox.removeChild(width);
-    }
-    // if (div) {
-    //   width
-  }
+function loadGrid() {
   for (let i = 1; i <= boxSize; i++) {
     let width = document.createElement('div');
     width.id = 'width' + i;
@@ -33,22 +25,38 @@ sizeButton.addEventListener('click', () => {
       div.style.border = '1px solid black';
       div.style.width = 'auto';
     }
-
-    //change color on hover
-    boxes.forEach((element) => {
-      element.addEventListener('mouseover', () => {
-        element.style.backgroundColor = 'black';
-      });
-    });
-
-    //reset button
-    let reset_button = document.querySelector('.reset_button');
-    reset_button.addEventListener('click', () => {
-      boxes.forEach((element) => {
-        element.style.backgroundColor = 'white';
-      });
-    });
   }
+}
+
+function clearGrid() {
+  let body = document.querySelector('body');
+  body.removeChild(bigbox);
+  let bigbox = document.createElement('div');
+  body.appendChild(bigbox);
+}
+//button to input x/y size
+let sizeButton = document.querySelector('.size_button');
+sizeButton.addEventListener('click', () => {
+  boxSize = prompt('how many boxes do you want for the grid size?');
+  if (width) {
+    clearGrid();
+    loadGrid();
+  }
+});
+
+//change color on hover
+boxes.forEach((element) => {
+  element.addEventListener('mouseover', () => {
+    element.style.backgroundColor = 'black';
+  });
+});
+
+//reset button
+let reset_button = document.querySelector('.reset_button');
+reset_button.addEventListener('click', () => {
+  boxes.forEach((element) => {
+    element.style.backgroundColor = 'white';
+  });
 });
 
 //width
