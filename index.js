@@ -1,6 +1,9 @@
 let bigbox = document.querySelector('.bigbox');
 let boxes = [];
-let boxSize = 100;
+let boxSize = 30;
+
+//button to input x/y size
+let sizeButton = document.querySelector('.size_button');
 
 //width
 for (let i = 1; i <= boxSize; i++) {

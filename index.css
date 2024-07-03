@@ -13,5 +13,6 @@ body {
 
 button {
   width: fit-content;
+  min-width: 60px;
   margin: 20px;
 }
