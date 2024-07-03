@@ -1,9 +1,11 @@
 let bigbox = document.querySelector('.bigbox');
 let boxes = [];
-let boxSize = 30;
 
 //button to input x/y size
 let sizeButton = document.querySelector('.size_button');
+sizeButton.addEventListener('click', () => {
+  let boxSize = prompt('how many boxes do you want for the grid size?');
+});
 
 //width
 for (let i = 1; i <= boxSize; i++) {
