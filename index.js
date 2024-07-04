@@ -33,6 +33,7 @@ function loadGrid() {
 //clears the grid
 function clearGrid() {
   let body = document.querySelector('body');
+  bigbox = document.querySelector('bigbox');
   body.removeChild(bigbox);
   let bigbox = document.createElement('div');
   body.appendChild(bigbox);
